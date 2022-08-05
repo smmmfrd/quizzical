@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #293264;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+main{
+  min-height: 100%;
+  background-color: #1C1C1C;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  position: relative;
+  overflow: hidden;
+  background-color: #F5F7FB;
+  min-height: 550px;
+  width: 550px;
+  border-radius: 1rem;
+}
+
+.blob{
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  border-radius: 5rem;
+}
+
+.blob.yellow{
+  background-color: #FFFAD1;
+  top: -30%;
+  right: -20%;
+  transform: rotate(120deg);
+}
+.blob.blue{
+  background-color: #DEEBF8;
+  top: 90%;
+  left: -20%;
+}
+
+/* START SCREEN */
+.start{
+  position: relative;
+  z-index: 1;
+  min-height: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.start-btn{
+  width: 200px;
+  height: 55px;
+
+  background-color: #4D5B9E;
+  border: none;
+  border-radius: 1rem;
+
+  color: #F5F7FB;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* QUESTIONS */
+
+.question-display{
+  position: relative;
+  z-index: 1;
+  min-height: inherit;
+}
+
+.questions-container{
+  padding-top: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.question{
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.answer-container{
+  display: flex;
+  gap: 1rem;
+}
+
+.answer{
+  font-size: 14px;
+  border: 1px solid #4D5B9E;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.answer.selected{
+  background-color: #D6DBF5;
+  border: none;
+}
+
+.answer.correct{
+  background-color: #94D7A2;
+  border: none;
+}
+
+.answer.wrong{
+  background-color: #F8BCBC;
+  border: none;
+}
+
+hr{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.questions-footer{
+  width: 100%;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-btn{
+  width: 120px;
+  height: 35px;
+
+  background-color: #4D5B9E;
+  border: none;
+  border-radius: 0.5rem;
+
+  color: #F5F7FB;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
